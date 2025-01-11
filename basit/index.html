@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="home">
+        <header>
+            <a href="#" class="logo">Sports</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Arivval</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+
+
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>That's <br><span>I Like</span></h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Provident natus iusto totam error ab veniam dolore dolores 
+                 Voluptate illo eius quaerat iusto maiores vero molestiae
+                 non accusamus assumenda.accusantium motivate and itaque?
+                </p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgbox">
+                <img src="/pngegg.png" alt="" class="sports">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="/pngegg (1).png" onclick="imgslider('/pngegg (1).png'); changecolor('#C4C6CA');"></li>
+            <li><img src="/pngegg (2).png" onclick="imgslider('/pngegg (2).png'); changecolor('#552623');"></li>
+            <li><img src="/pngegg (3).png" onclick="imgslider('/pngegg (3).png'); changecolor('#114C6E');"></li>
+        </ul>
+    </section>
+
+    </div>
+</body>
+
+</html>
+<script>
+    function imgslider(something){
+        document.querySelector('.sports').src = something;
+    }
+    function changecolor(color){
+        const sec = document.querySelector('.home')
+        sec.style.background = color;
+    }
+</script>
